@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">☁️ WeatherApp</div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>🌤️ Welcome to <span>WeatherNow</span></h1>
+        <p>Get <strong>real-time</strong> weather updates and forecasts for your favorite cities around the world.</p>
+        <form class="search-form">
+          <input type="text" id="city-input" placeholder="Enter your city" aria-label="Search city" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+
+      <div class="weather-cards">
+        <div class="card">
+          <h3>🌡️ Temperature</h3>
+          <p id="temp">--</p>
+        </div>
+        <div class="card">
+          <h3>💧 Humidity</h3>
+          <p id="humidity">--</p>
+        </div>
+        <div class="card">
+          <h3>🌬️ Wind Speed</h3>
+          <p id="wind">--</p>
+        </div>
+        <div class="card">
+          <h3>🌥️ Forecast</h3>
+          <p id="forecast">--</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
